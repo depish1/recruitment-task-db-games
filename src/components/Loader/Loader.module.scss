@@ -1,0 +1,42 @@
+@keyframes dotPulse {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader {
+  align-items: center;
+  background-color: #ffffff11;
+  backdrop-filter: blur(10px);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  &__dot {
+    animation: dotPulse 1s linear infinite;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin: 0 4px;
+    width: 10px;
+
+    &--second {
+      animation-delay: 333ms;
+    }
+    &--third {
+      animation-delay: 666ms;
+    }
+  }
+}

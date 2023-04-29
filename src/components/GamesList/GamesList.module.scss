@@ -1,0 +1,25 @@
+.games-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1500px;
+  width: 100%;
+
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media screen and (min-width: 1500px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &__input-wrapper {
+    grid-column: 1 / -1;
+    margin-top: 16px;
+  }
+}

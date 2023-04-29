@@ -1,0 +1,14 @@
+.header {
+  align-items: center;
+  background-color: #272727;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  padding: 16px;
+
+  @media screen and (min-width: 600px) {
+    grid-template-columns: max-content 1fr 200px;
+    padding: 4px 16px;
+  }
+}

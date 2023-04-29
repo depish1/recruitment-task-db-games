@@ -1,0 +1,42 @@
+.game {
+  background: #1e1e1e;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  overflow: hidden;
+  width: 100%;
+
+  &__img {
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+  &__img-container {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__details {
+    font-size: 14px;
+
+    span:first-child {
+      font-weight: 500;
+    }
+  }
+}
