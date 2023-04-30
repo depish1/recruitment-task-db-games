@@ -24,5 +24,5 @@ export const SearchField = () => {
     dispatch(setSearchKey(e.currentTarget.value));
   };
 
-  return <InputField icon={<SearchIcon />} onChange={debounceChangeHandler} onKeyDown={debounceKeyDownHandler} />;
+  return <InputField icon={<SearchIcon />} id="searchKey" name="searchKey" onChange={debounceChangeHandler} onKeyDown={debounceKeyDownHandler} />;
 };

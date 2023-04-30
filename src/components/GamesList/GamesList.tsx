@@ -3,7 +3,7 @@ import { PageField } from 'Components/PageField/PageField';
 import { SingleGame } from 'Components/SingleGame/SingleGame';
 import css from './GamesList.module.scss';
 
-type PropsType = {
+export type PropsType = {
   data: GetGamesResponseType | undefined;
 };
 

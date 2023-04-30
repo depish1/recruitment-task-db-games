@@ -15,5 +15,5 @@ export const ApiField = () => {
     [dispatch],
   );
 
-  return <InputField icon={<KeyIcon />} onChange={debounceChangeHandler} />;
+  return <InputField icon={<KeyIcon />} id="apiKey" name="apiKey" onChange={debounceChangeHandler} />;
 };
